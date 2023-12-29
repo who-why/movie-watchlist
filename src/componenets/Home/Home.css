@@ -1,0 +1,76 @@
+.swipe{
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+}
+.swipe img{
+  width: 100%;
+  height: 100%;
+}
+.swipe .text{
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 600px;
+  color: white;
+}
+.text h1{
+  font-size: 34px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.Home{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.popular{
+  position: relative;
+  margin-top: 10px;
+  width: 90%;
+  background-color: aliceblue;
+  color: #000;
+  border-radius: 10px;
+}
+.popular h1{
+  font-size: 28px;
+  font-weight: 600;
+  margin: 20px;
+}
+.popular .card{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  align-items: center;
+  gap: 25px;
+}
+.popular .cart-image{
+  width: 20%;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.popular .cart-image:hover{
+  transform: scale(1.1);
+}
+.card img{
+  width:100%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .popular .cart-image {
+    width: calc(50% - 20px); 
+  }
+}

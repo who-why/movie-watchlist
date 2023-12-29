@@ -1,0 +1,79 @@
+.container {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.watchlist-item {
+  position: relative;
+  width: 20%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #000;
+  border-radius: 10px;
+  cursor: pointer;
+  white-space: ;
+}
+.text{
+  margin: 10px;
+}
+.watchlist-item img{
+  width: 90%;
+}
+.watchlist-item img {
+  max-width: 100%;
+  height: auto;
+}
+.watchlist-item .p-title{
+  font-size: 18px;
+}
+.action-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.watchlist-item:hover {
+  background-color: #f0f0f0;
+}
+
+.watchlist-item:hover .action-icons {
+  opacity: 1;
+  font-size: 24px;
+}
+
+.view-icon,
+.remove-icon {
+  cursor: pointer;
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.remove-icon {
+  color: red;
+  font-weight: 700;
+}
+.add-item{
+  position: absolute;
+  top: 50%;
+  background-color: rgb(191, 19, 13);
+  padding: 7px 10px;
+  border-radius: 10px;
+  transition: 0.3s ease-in;
+  text-align: center;
+  font-size: 18px;
+}
+.add-item:hover{
+  background-color: rgb(216, 57, 57);
+}
